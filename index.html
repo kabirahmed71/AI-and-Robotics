@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PUST Central Cafe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>PUST Central Cafe</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#order">Order</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Welcome to PUST Central Cafe - Fresh Taste, Elegant Feel</h2>
+  </section>
+
+  <section class="menu" id="menu">
+    <h2 class="menu-title">Popular Items</h2>
+
+    <div class="menu-buttons">
+      <button class="filter-btn active" type="button" data-filter="all">All</button>
+      <button class="filter-btn" type="button" data-filter="morning">Morning</button>
+      <button class="filter-btn" type="button" data-filter="lunch">Lunch</button>
+      <button class="filter-btn" type="button" data-filter="afternoon">Afternoon</button>
+      <button class="filter-btn" type="button" data-filter="dinner">Dinner</button>
+    </div>
+
+    <div class="cards">
+      <article class="card" data-meal="morning">
+        <img src="https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=900&q=80" alt="Rice">
+        <div class="card-content">
+          <h3>Rice</h3>
+          <p class="price">Tk 50</p>
+        </div>
+      </article>
+      <article class="card" data-meal="lunch">
+        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=900&q=80" alt="Mangso">
+        <div class="card-content">
+          <h3>Mangso</h3>
+          <p class="price">Tk 120</p>
+        </div>
+      </article>
+      <article class="card" data-meal="lunch">
+        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=900&q=80" alt="Fish Curry">
+        <div class="card-content">
+          <h3>Fish Curry</h3>
+          <p class="price">Tk 100</p>
+        </div>
+      </article>
+      <article class="card" data-meal="morning">
+        <img src="https://images.unsplash.com/photo-1534939561126-855b8675edd7?auto=format&fit=crop&w=900&q=80" alt="Paratha and Egg">
+        <div class="card-content">
+          <h3>Paratha and Egg</h3>
+          <p class="price">Tk 70</p>
+        </div>
+      </article>
+      <article class="card" data-meal="afternoon">
+        <img src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?auto=format&fit=crop&w=900&q=80" alt="Tea and Singara">
+        <div class="card-content">
+          <h3>Tea and Singara</h3>
+          <p class="price">Tk 40</p>
+        </div>
+      </article>
+      <article class="card" data-meal="dinner">
+        <img src="https://images.unsplash.com/photo-1563379091339-03246963d29c?auto=format&fit=crop&w=900&q=80" alt="Chicken Biryani">
+        <div class="card-content">
+          <h3>Chicken Biryani</h3>
+          <p class="price">Tk 180</p>
+        </div>
+      </article>
+      <article class="card" data-meal="dinner">
+        <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=900&q=80" alt="Beef Kebab Plate">
+        <div class="card-content">
+          <h3>Beef Kebab Plate</h3>
+          <p class="price">Tk 160</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="order" id="order">
+    <h2>Order Now</h2>
+    <form class="order-form" action="order.php" method="POST">
+      <input type="text" name="name" id="name" placeholder="Your Name" required>
+      <input type="text" name="phone" id="phone" placeholder="Mobile Number" required>
+      <select name="item" id="item" required>
+        <option value="Rice">Rice</option>
+        <option value="Mangso">Mangso</option>
+        <option value="Fish Curry">Fish Curry</option>
+        <option value="Paratha and Egg">Paratha and Egg</option>
+        <option value="Tea and Singara">Tea and Singara</option>
+        <option value="Chicken Biryani">Chicken Biryani</option>
+        <option value="Beef Kebab Plate">Beef Kebab Plate</option>
+      </select>
+      <input type="number" name="qty" id="qty" placeholder="Quantity" min="1" required>
+      <textarea name="address" id="address" placeholder="Address" rows="3" required></textarea>
+      <p class="payment-label">Select Payment:</p>
+      <select name="payment" id="payment" required>
+        <option value="Bkash">Bkash</option>
+        <option value="Nagad">Nagad</option>
+        <option value="Cash on Delivery">Cash on Delivery</option>
+      </select>
+      <button type="submit">Order via WhatsApp</button>
+    </form>
+  </section>
+
+  <footer id="contact">
+    <h3>Contact Us</h3>
+    <p>WhatsApp: 01569128529</p>
+    <p>Email: pustcentralcafe@gmail.com</p>
+    <h4>Our Location</h4>
+    <iframe src="https://maps.google.com/maps?q=rajshahi&t=&z=13&ie=UTF8&iwloc=&output=embed" title="PUST Central Cafe Location"></iframe>
+    <p class="copyright">&copy; 2026 PUST Central Cafe</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

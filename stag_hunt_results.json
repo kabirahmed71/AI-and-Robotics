@@ -1,0 +1,32 @@
+{
+  "10": {
+    "stag_percentage": 88.6,
+    "hare_percentage": 11.4,
+    "average_payoff": 8.74
+  },
+  "25": {
+    "stag_percentage": 74.3,
+    "hare_percentage": 25.7,
+    "average_payoff": 7.27
+  },
+  "40": {
+    "stag_percentage": 61.2,
+    "hare_percentage": 38.8,
+    "average_payoff": 6.51
+  },
+  "55": {
+    "stag_percentage": 45.6,
+    "hare_percentage": 54.4,
+    "average_payoff": 5.9
+  },
+  "70": {
+    "stag_percentage": 27.6,
+    "hare_percentage": 72.4,
+    "average_payoff": 5.74
+  },
+  "85": {
+    "stag_percentage": 15.4,
+    "hare_percentage": 84.6,
+    "average_payoff": 6.14
+  }
+}
